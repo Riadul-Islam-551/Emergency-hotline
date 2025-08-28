@@ -63,6 +63,7 @@ body {
     font-size: 10px;
     padding: 4px 10px;
     background-color: #dddddd;
+    color: rgb(88, 88, 88);
     display: inline-block;
     border-radius: 10px;
 }
