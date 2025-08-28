@@ -18,15 +18,29 @@ for (const callButton of cardCallButton) {
       alert("You don't have enough coin");
       return;
     }
-    alert("calling");
+
+    // finding the title , number , timezone 
+    const findParent = this.closest(".card");
+    const cardTitle = findParent.querySelector("h1").innerText;
+    const emergencyNumber = findParent.querySelector("h2").innerText;
+    const date = new Date().toLocaleTimeString();
+
+    // alert message 
+    alert("calling " + cardTitle + " " + emergencyNumber + "...");
+    // coin counting 
     const coinCountcontainer = document.getElementById("coin-count");
     let coinCount = parseInt(coinCountcontainer.innerText);
     coinCount -= 20;
     coinCountcontainer.innerText = coinCount;
+
+
+
+    
+
+    console.log(cardTitle, emergencyNumber, date);
+
     if (coinCount <= 0) {
       finishCoins = true;
     }
-    console.log(coinCount);
-    console.log("button is clicked");
   });
 }
