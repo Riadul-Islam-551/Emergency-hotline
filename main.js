@@ -27,7 +27,7 @@ for (const callButton of cardCallButton) {
     const currentTime = new Date().toLocaleTimeString();
 
     // alert message
-    alert("calling " + cardTitle + " " + emergencyNumber + "...");
+    alert("Calling " + cardTitle + " " + emergencyNumber + "...");
 
     // coin counting
     const coinCountcontainer = document.getElementById("coin-count");
@@ -52,17 +52,23 @@ for (const callButton of cardCallButton) {
                             <p class="text-[#777777] text-xs">${data.number}</p>
                         </div>
                         <div>
-                            <p>${data.time}</p>
+                            <p class="text-xs">${data.time}</p>
                         </div>
                     </div>
   `;
     callHistorySection.appendChild(div);
     // console.log(div);
     // console.log(callData);
-    console.log(cardTitle, emergencyNumber, currentTime, callHistoryData);
+    // console.log(cardTitle, emergencyNumber, currentTime, callHistoryData);
 
     if (coinCount <= 0) {
       finishCoins = true;
     }
   });
 }
+
+// clear button functionality of call-history section  
+document.getElementById("clear-button").addEventListener("click", function () {
+  const clearCallHistory = document.getElementById("call-history-section");
+  clearCallHistory.innerHTML = "";
+});
