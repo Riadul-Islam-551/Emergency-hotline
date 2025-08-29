@@ -1,7 +1,10 @@
 const heartButton = document.getElementsByClassName("card-heart");
 let callHistoryData = [];
 
-// heart button functionality implementation
+//
+//
+//
+//  heart button functionality implementation
 for (const heart of heartButton) {
   heart.addEventListener("click", function () {
     const heartCountElement = document.getElementById("heart-count");
@@ -10,6 +13,9 @@ for (const heart of heartButton) {
     heartCountElement.innerText = heartCount;
   });
 }
+//
+//
+//
 // call button functionality
 const cardCallButton = document.getElementsByClassName("card-call");
 let finishCoins = false;
@@ -67,10 +73,42 @@ for (const callButton of cardCallButton) {
   });
 }
 
-// clear button functionality of call-history section  
+//
+//
+//
+// clear button functionality of call-history section
 document.getElementById("clear-button").addEventListener("click", function () {
   const clearCallHistory = document.getElementById("call-history-section");
   clearCallHistory.innerHTML = "";
 });
 
-// copy button functionality 
+//
+//
+//
+// copy button functionality
+
+const cardCopyBtn = document.getElementsByClassName("card-copy-btn");
+for (const copyButton of cardCopyBtn) {
+  copyButton.addEventListener("click", function () {
+    let navCopyCountContainer = document.getElementById("nav-copy-count");
+    let navCopyCount = parseInt(navCopyCountContainer.innerText);
+
+    // get the EmergencyNumber of the copy button container part (.card)
+    const copyParent = this.closest(".card");
+    const copyEmergencyNum = copyParent.querySelector("h2").innerText;
+    // copy the Emergency Number
+    navigator.clipboard.writeText(copyEmergencyNum);
+    // alert the emergencyNumber
+    alert("Copy the Number: " + copyEmergencyNum);
+
+    // copy count increasing
+    navCopyCount++;
+    navCopyCountContainer.innerText = navCopyCount;
+
+    // console part
+    // console.log(copyParent);
+    // console.log(copyEmergencyNum);
+    // console.log(navCopyCount);
+    // console.log("button is clicked");
+  });
+}
