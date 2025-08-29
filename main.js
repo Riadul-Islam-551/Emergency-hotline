@@ -52,7 +52,7 @@ for (const callButton of cardCallButton) {
                             <p class="text-[#777777] text-xs">${data.number}</p>
                         </div>
                         <div>
-                            <p class="text-xs">${data.time}</p>
+                            <p class="text-xs w-[80px] ">${data.time}</p>
                         </div>
                     </div>
   `;
@@ -72,3 +72,5 @@ document.getElementById("clear-button").addEventListener("click", function () {
   const clearCallHistory = document.getElementById("call-history-section");
   clearCallHistory.innerHTML = "";
 });
+
+// copy button functionality 
