@@ -28,16 +28,17 @@
         <nav class="flex justify-between items-center p-3 max-w-[1200px] mx-auto">
             <div class="flex justify-between items-center">
                 <img class="" style="width: 50px;" src="./assets/logo.png" alt="">
-                <p class="ml-2 font-bold leading-5 text-[#006747]">Emergency <br> Service</p>
+                <p class="ml-2 font-bold leading-5 text-[#006747] text-[12px] md:text-[14px]">Emergency <br> Service</p>
             </div>
             <div class="flex gap-3">
                 <button class="nav-button flex justify-center items-center">
-                    <span id="heart-count" class="text-black font-bold ">0</span>
+                    <span id="heart-count" class="text-black font-bold text-[12px]">0</span>
                     <img class="ml-2" style="width: 20px;" src="./assets/heart.png" alt="">
                 </button>
                 <button class="nav-button flex justify-center items-center">
-                    <span id="coin-count" class="text-black font-bold">100</span>
-                    <img class="ml-2" style="width: 20px;" src="./assets/coin.png" alt=""></button>
+                    <span id="coin-count" class="text-black font-bold text-[12px]">100</span>
+                    <img class="ml-2" style="width: 20px;" src="./assets/coin.png" alt="">
+                </button>
                 <button class="uni-button"><span id="nav-copy-count">0</span> Copy</button>
             </div>
         </nav>
@@ -45,8 +46,9 @@
         <section class="banner w-full h-[250px] flex justify-center">
             <div class="flex flex-col justify-center items-center text-white">
                 <img style="width: 50px;" src="./assets/logo-dark.png" alt="">
-                <h1 class="text-2xl font-extrabold my-5">Emergency Service Directory</h1>
-                <p class="text-[14px]">Government Emergency Services at Your Fingertip – A Project by Government of the
+                <h1 class="text-2xl font-extrabold my-3 lg:my-5 text-center px-3 ">Emergency Service Directory</h1>
+                <p class="text-[10px] lg:text-[14px] px-2 lg:px-0  text-center">Government Emergency Services at Your
+                    Fingertip – A Project by Government of the
                     People’s Republic of
                     Bangladesh</p>
             </div>
@@ -55,8 +57,9 @@
     <!-- main section starts here !!!  -->
     <main>
         <section class="emergency-number bg-[#dbfff3] w-full py-9">
-            <div class="max-w-[1200px] mx-auto  flex justify-between">
-                <div class="emergrncy-card grid grid-cols-3 gap-5 max-w-[850px]">
+            <div
+                class="border-red-500 max-w-[1200px] mx-auto  flex gap-3   flex-col-reverse lg:flex-row justify-center items-center lg:items-start ">
+                <div class="emergrncy-card grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 max-w-[850px]">
                     <!-- card-1  -->
                     <div class="card w-[270px] h-[260px] p-5 bg-white shadow-md rounded-lg">
                         <div class="flex justify-between items-center mb-3">
@@ -302,7 +305,8 @@
                     </div>
                 </div>
                 <!-- call history section starts here  -->
-                <div class="history-section bg-white w-[300px] rounded-xl shadow-md p-5">
+                <div
+                    class="history-section bg-white w-[300px] md:w-[600px] lg:w-[300px] rounded-xl shadow-md p-5 mb-5 ">
                     <div class="flex justify-between items-center">
                         <div class="">
                             <i class="fa-regular fa-clock"></i>

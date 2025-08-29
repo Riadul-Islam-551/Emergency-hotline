@@ -14,6 +14,17 @@ body {
     font-size: 14px;
 }
 
+@media (max-width:500px) {
+    .uni-button {
+        border-radius: 50px;
+        padding: 2px 7px;
+        font-weight: 400;
+        background-color: #00a63e;
+        color: white;
+        font-size: 10px;
+    }
+}
+
 .nav-button {
     border-radius: 50px;
     padding: 5px 20px;
@@ -21,6 +32,17 @@ body {
     background-color: #dfffeb;
     color: white;
     font-size: 14px;
+}
+
+@media (max-width:500px) {
+    .nav-button {
+        border-radius: 50px;
+        padding: 2px 7px;
+        font-weight: 400;
+        background-color: #dfffeb;
+        color: white;
+        font-size: 10px;
+    }
 }
 
 .card-button-primary {
@@ -48,18 +70,22 @@ body {
     background: #006747;
     background: radial-gradient(circle, rgba(0, 103, 71, 1) 0%, rgba(1, 50, 35, 1) 100%);
 }
+
 /* card section  */
 .card-heart {
     color: #8d8d8d;
 }
-.card-logo-bg{
+
+.card-logo-bg {
     background-color: #ffdada;
 }
-.card-secondary-text{
+
+.card-secondary-text {
     color: #777777;
     font-size: 10px;
 }
-.card-chatagory{
+
+.card-chatagory {
     font-size: 10px;
     padding: 4px 10px;
     background-color: #dddddd;
